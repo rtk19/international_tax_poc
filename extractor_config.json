@@ -1,0 +1,36 @@
+{
+  "file_types": [
+    {
+      "name": "pli_amadeus",
+      "filename_contains": "PLI_Amadeus.xlsx",
+      "sheets": [
+        {
+          "name": "Overview PLI Results",
+          "key_value_section": {
+            "key_column": "C",
+            "value_column": "E",
+            "start_row": 1
+          },
+          "tables": [
+            {
+              "table_name": "companies",
+              "headers": [
+                "No.",
+                "Company Code",
+                "Data Source",
+                "Current Status",
+                "IQR",
+                "Company Name",
+                "Net Cost Plus"
+              ]
+            },
+            {
+              "table_name": "summary_ranges",
+              "header_starts_with": "Summary Ranges - Percentile (Spreadsheet) Method"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
